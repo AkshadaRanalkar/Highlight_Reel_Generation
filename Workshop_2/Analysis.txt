@@ -1,6 +1,0 @@
-Used matplotlib to draw line plot, box plot, histogram and draw various conclusions based on it.
-
-Conclusions based on line plot:
-The plot shows a fluctuating pattern of values over time.
-There are no extreme outliers visible in this plot.
-The data appears to be somewhat symmetrically distributed around zero, with peaks and troughs occurring at regular intervals.
