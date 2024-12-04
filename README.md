@@ -69,8 +69,15 @@ Before running the project, ensure that you have the following dependencies inst
 ### Steps to Install
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/AkshadaRanalkar/Highlight_Reel_Generation
+   cd volleyball-highlight-system
+   ```
 
 2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Ensure video and data files are located in the data/ folder.
    
@@ -81,29 +88,46 @@ Before running the project, ensure that you have the following dependencies inst
 ### 1. Preprocess and Visualize Data
 
 - **Clean and analyze match data:**
+   ```bash
+    python data_analysis.py
+    ```
  
 
 - **Animate ball trajectories in the match video:**
-
-
-- **Feature Visualization**: Visualize the custom features with ball tracking in a video using `animation.py`:
+  ```bash
+    python animation.py
+    ```
 
 ### 2. Train Classification Model
 
-- **Train the classifier to predict key match events:** 
+- **Train the classifier to predict key match events:**
+      ```bash
+    python Time_Classification1.py
+    ```
 
-- **Visualize predictions:** 
+- **Visualize predictions:**
+      ```bash
+    python visualize_target.py
+    ``` 
 
 ### 3. Smooth Predictions:
    - Apply smoothing techniques to reduce noise in predictions:
+      ```bash
+    python filter_predictions.py
+    ``` 
 
 ### 4. Highlight Generation:
    - Once the model is trained, run the opencv_intro script to create the highlights from a video:
-
+      ```bash
+    python opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --filters --resize 1280 720 --speed 0.5
+    ``` 
 
 ### 5. Video Transition:
    - Produce highlights with transitions:
-
+      ```bash
+    python video_prediction.py
+    ``` 
+    
 ---
 
 ## File Structure
