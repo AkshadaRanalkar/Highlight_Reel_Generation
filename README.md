@@ -201,7 +201,7 @@ Model Overview:
 
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
         <img src="results/Accuracy_XGboost.png" alt="Classification Report" width="600" height="350"/>
-        <img src="results/Parameter_Search_Heatmap.png" alt="F1 Score HeatMap" width="400" height="250"/>
+        <img src="results/Parameter_Search_Heatmap.png" alt="F1 Score HeatMap" width="500" height="350"/>
      </div>
 
 2. **Prediction Smoothing:**
