@@ -112,14 +112,14 @@ Before running the project, ensure that you have the following dependencies inst
 
 ### 3. Smooth Predictions:
    - Apply smoothing techniques to reduce noise in predictions:
-    ```bash
-    python filter_predictions.py
-    ``` 
+       ```bash
+       python filter_predictions.py
+       ``` 
 
 ### 4. Highlight Generation:
    - Once the model is trained, run the opencv_intro script to create the highlights from a video:
     ```bash
-    python opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --filters --resize 1280 720 --speed 0.5
+python opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --filters --resize 1280 720 --speed 0.5
     ``` 
 
 ### 5. Video Transition:
@@ -200,7 +200,7 @@ Model Overview:
    - The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
 
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
-        <img src="results/Accuracy_XGboost.png" alt="Classification Report" width="400" height="250"/>
+        <img src="results/Accuracy_XGboost.png" alt="Classification Report" width="350" height="250"/>
         <img src="results/Parameter_Search_Heatmap.png" alt="F1 Score HeatMap" width="400" height="250"/>
      </div>
 
