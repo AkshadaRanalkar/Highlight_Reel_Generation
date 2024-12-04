@@ -200,7 +200,7 @@ Model Overview:
    - The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
 
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
-        <img src="results/Accuracy_XGboost.png" alt="Classification Report" width="700" height="350"/>
+        <img src="results/Accuracy_XGboost.png" alt="Classification Report" width="700" height="300"/>
         <img src="results/Parameter_Search_Heatmap.png" alt="F1 Score HeatMap" width="620" height="460"/>
      </div>
 
@@ -213,10 +213,6 @@ Model Overview:
    
 3. **Highlight Video:**
    - Highlights with smooth transitions are saved. Transition effects like fade, slide, and dissolve enhance the presentation quality of the video.
-
-    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
-        <img src="results/filter_predictions_output.png" alt="Output of filter Prediction" width="700" height="300"/>
-    </div>
 
 4. **Video Transition Details**
    - The video transitions were visually appealing, adding a professional touch to the highlight reel.
