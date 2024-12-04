@@ -124,7 +124,7 @@ Before running the project, ensure that you have the following dependencies inst
 
 ### 5. Video Transition:
    - Produce highlights with transitions:
-      ```bash
+    ```bash
     python video_prediction.py
     ``` 
     
