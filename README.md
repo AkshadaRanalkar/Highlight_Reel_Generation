@@ -6,7 +6,7 @@
 ## Output Highlights
 
 Experience volleyball match highlights featuring advanced prediction smoothing, transitions, and insightful visualizations:  
-[![Watch Highlights on YouTube](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
+[![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
 
 ---
 
