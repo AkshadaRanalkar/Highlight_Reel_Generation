@@ -88,37 +88,37 @@ Before running the project, ensure that you have the following dependencies inst
 ### 1. Preprocess and Visualize Data
 
 - **Clean and analyze match data:**
-   ```bash
+    ```bash
     python data_analysis.py
     ```
  
 
 - **Animate ball trajectories in the match video:**
-  ```bash
+    ```bash
     python animation.py
     ```
 
 ### 2. Train Classification Model
 
 - **Train the classifier to predict key match events:**
-      ```bash
+    ```bash
     python Time_Classification1.py
     ```
 
 - **Visualize predictions:**
-      ```bash
+    ```bash
     python visualize_target.py
     ``` 
 
 ### 3. Smooth Predictions:
    - Apply smoothing techniques to reduce noise in predictions:
-      ```bash
+    ```bash
     python filter_predictions.py
     ``` 
 
 ### 4. Highlight Generation:
    - Once the model is trained, run the opencv_intro script to create the highlights from a video:
-      ```bash
+    ```bash
     python opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --filters --resize 1280 720 --speed 0.5
     ``` 
 
@@ -132,7 +132,7 @@ Before running the project, ensure that you have the following dependencies inst
 
 ## File Structure
 
-
+```
 Video Highlight Reel Generating System/
 │
 ├── data/                         # Contains raw data and videos
@@ -161,7 +161,7 @@ Video Highlight Reel Generating System/
 │
 └── requirements.txt              # Project dependencies
 
-
+```
 ---
 
 ## Model Processing Details
@@ -200,8 +200,8 @@ Model Overview:
    - The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
 
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
-        <img src="results/workshop_4_output.png" alt="Classification Report" width="400" height="250"/>
-        <img src="results/f1_heatmap.png" alt="F1 Score HeatMap" width="400" height="250"/>
+        <img src="results/Accuracy_XGboost.png" alt="Classification Report" width="400" height="250"/>
+        <img src="results/Parameter_Search_Heatmap.png" alt="F1 Score HeatMap" width="400" height="250"/>
      </div>
 
 2. **Prediction Smoothing:**
