@@ -1,0 +1,2 @@
+With logistic regression I received accuracy of 84%
+With XGboost I received an accuracy of 85%
