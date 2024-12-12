@@ -3,35 +3,28 @@
 
 ---
 
-## Output Highlights
+## Video Link:
 
 Experience volleyball match highlights featuring advanced prediction smoothing, transitions, and insightful visualizations:  
 [![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
 
 ---
 
-## Overview
+## An Overview of the project:
 The **An Video Highlight Reel Generating System**  utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. 
 This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
 
----
-
-## Table of Contents
-1. [Project Workflow](#project-phases)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [File Structure](#file-structure)
-6. [Model and Processing Details](#model-details)
-7. [Results](#results)
-8. [Video Transition Details](#video-transition)
-9. [Evaluation and Metrics](#evaluation-and-metrics)
-10. [Acknowledgments](#acknowledgments)
-
----
+## Requirements:
+Before running the project, ensure that you have the following dependencies installed:
+Python 3.7+
+opencv-python
+numpy
+pandas
+scikit-learn
+matplotlib
+scipy
 
 ## Project Workflow
-
 The project is divided into several stages:
 
 1. **Data Analysis and Feature Engineering:** Perform data cleaning and derive additional features using scripts like data_analysis.py.
@@ -52,114 +45,116 @@ Visualize model predictions with visualize_target.py.
 
 ---
 
-## Installation
-
-### Requirements
-
-Before running the project, ensure that you have the following dependencies installed:
-
-- Python 3.7+
-- opencv-python
-- numpy
-- pandas
-- scikit-learn
-- matplotlib
-- scipy
-
-### Steps to Install
-
-1. Clone the repository:
+## Steps to Install
+Clone the repository:
    ```bash
    git clone https://github.com/AkshadaRanalkar/Highlight_Reel_Generation
    cd volleyball-highlight-system
    ```
-
-2. Install dependencies:
+Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+Install the required libraries:
    ```bash
    pip install -r requirements.txt
    ```
-
-3. Ensure video and data files are located in the data/ folder.
-   
+Ensure video and data files are located in the data/ folder.  
 ---
 
 ## Usage
-
-### 1. Preprocess and Visualize Data
+1. Preprocess and Visualize Data:
 
 - **Clean and analyze match data:**
     ```bash
-    python data_analysis.py
+    python data_preprocessing/data_analysis.py
     ```
- 
-
+- **Feature Engineering:**
+    ```bash
+    python data_preprocessing/data_analysis_custom_feature.py
+    ```
+ Add custom derivative features such as "time spent in region" with data_analysis_custom_feature.py: 
 - **Animate ball trajectories in the match video:**
     ```bash
-    python animation.py
+    python data_preprocessing/animation.py
     ```
-
-### 2. Train Classification Model
-
+2. Train Classification Model
 - **Train the classifier to predict key match events:**
     ```bash
-    python Time_Classification1.py
+    python model_training/Time_Classification1.py
     ```
-
 - **Visualize predictions:**
     ```bash
-    python visualize_target.py
+    python model_training/visualize_target.py
     ``` 
-
-### 3. Smooth Predictions:
+3. Smooth Predictions:
    - Apply smoothing techniques to reduce noise in predictions:
        ```bash
-       python filter_predictions.py
+       python video_processing/filter_predictions.py
        ``` 
-
-### 4. Highlight Generation:
+4. Highlight Generation:
    - Once the model is trained, run the opencv_intro script to create the highlights from a video:
         ```bash
-       python opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --filters --resize 1280 720 --speed 0.5
+       python video_processing/opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --resize 1280 720 --speed 0.5
        ``` 
-
-### 5. Video Transition:
+5. Video Transition:
    - Produce highlights with transitions:
      ```bash
-      python video_prediction.py
+      python video_processing/video_prediction.py
      ``` 
-    
 ---
 
-## File Structure
-
+## File Structure:
 ```
-Video Highlight Reel Generating System/
+Video Highlight Reel Generating:
 
--> data/                         # Contains raw data and videos
-  ── video.mp4                 # Input video file
-  ── provided_data.csv         # Raw trajectory data
-  ── target.csv                # Classification target data
+data: Contains raw data and videos
+i) Input video file
+   video.mp4                 
+ii) Raw trajectory data
+    provided_data.csv         
+iii) Classification target data
+     target.csv               
 
--> scripts/                      # Python scripts for different stages
-   ---> data_preprocessing/       # Data collection and preprocessing
-        ── data_analysis.py   # Initial data cleaning and visualization
-        ── animation.py          # Visualize custom features with ball tracking
-
-   ---> model_training/           # Model selection and training
-        ── Time_Classification1.py    # Train XGboost classifier
-        ── visualize_target.py     # Visualize model predictions on video
+scripts: Python scripts for different stages
+--> data_preprocessing: Data collection and preprocessing
+     i) Initial data cleaning and visualization
+        data_analysis.py             
+     ii) Adding custom features
+         data_analysis_features.py   
+     iii) Visualize custom features with ball tracking
+          animation.py               
+     iv) Results generated by data preprocessing scripts
+         results                      
+--> model_training: Model selection and training
+     i) Train XGboost classifier
+        Time_Classification1.py     
+     ii) Visualize model predictions on video
+         visualize_target.py        
+     iii) Results generated by data preprocessing scripts
+          results                    
    
-   ---> video_processing/         # Video smoothing and transitions
-        ── filter_predictions.py  # Apply advanced filtering techniques
-        ── opencv_intro.py        # Highlight generation with OpenCV
-        ── video_transition.py    # Apply transitions between video segments
+---> video_processing: Video smoothing and transitions
+     i) Apply advanced filtering techniques
+        filter_predictions.py   
+     ii) Highlight generation with OpenCV
+         opencv_intro.py         
+     iii) Apply transitions between video segments
+          video_transition.py    
+     iv) Results generated by data preprocessing scripts 
+         results
+            
+results: Output files
+i) Smoothed model predictions:
+   smoothed_predictions.csv           
+ii) Video without transitions
+    output_video.mp4                  
+iii) Video with transitions
+     highlight_reel_transitions.mp4
 
--> results/                      # Output files
-   ── smoothed_predictions.csv  # Smoothed model predictions
-   ── output_video.mp4            # Video without transitions
-   ── highlight_reel_transitions.mp4        # Video with transitions
-
--> requirements.txt              # Project dependencies
+Project dependencies:
+ requirements.txt  
 
 ```
 ---
@@ -169,13 +164,10 @@ Video Highlight Reel Generating System/
 Model Overview:
 
 1. **Classifier:** 
-   - XGBoost (eXtreme Gradient Boosting)
+   - XGBoost (eXtreme Gradient Boosting). Multiple models have been run and the accuracy has been compared to get the best model.
      
 2. **Feature Engineering:** 
-   - Incorporates ball trajectory features, aspect ratio, size, and additional engineered features like time-lagged values.
-
-3. **Hyperparameter Optimization:** 
-   - Fine-tuned learning rate, maximum depth, and the number of estimators for optimal classification accuracy.
+   - Features such as distance travelled, angle change has been incorporated
 
 ---
 
@@ -196,7 +188,15 @@ Model Overview:
 
 ## Results
 
-1. **Model Performance**:
+1. **Feature**:
+   - Distance Travelled: The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
+   - Angle Change: The angle change feature measures the change in direction between consecutive points. It can help analyze motion dynamics, such as:Identifying turns or changes in trajectory, understanding directional patterns in movement, detecting anomalies or irregularities in motion paths.
+     <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
+        <img src="results/Distance_Traveled.png" alt="Distance Travelled" width="700" height="300"/>
+        <img src="/results/Angle_Change_Visualization.png" alt="Angle Change" width="620" height="460"/>
+     </div>
+     
+2. **Model Performance**:
    - The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
 
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
@@ -223,21 +223,3 @@ Model Overview:
    - [Watch the Full Video Highlight on YouTube](https://youtu.be/YOlFYVxnS3Q?si=IVNFbEKPjGHvNNZs)
 
 ---
-
-## Evaluation and Metrics
-
-The model was evaluated using the following metrics:
-
-- **Precision**: Measures the accuracy of the positive predictions.
-- **Recall**: Measures the ability of the model to find all relevant instances.
-- **F1-Score**: Harmonic mean of precision and recall.
-- **ROC-AUC**: Measures the trade-off between true positive rate and false positive rate.
-
----
-
-## Acknowledgments
-
-- OpenCV: Used for video processing and transition effects.
-- XGBoost: For robust and accurate event classification.
-- Matplotlib: For visualizing predictions and smoothed results.
-- Pandas: For data manipulation and handling.
