@@ -96,7 +96,7 @@ Ensure video and data files are located in the data/ folder.
 4. Highlight Generation:
    - Once the model is trained, run the opencv_intro script to create the highlights from a video:
         ```bash
-       python video_processing/opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --resize 1280 720 --speed 0.5
+       python video_processing/opencv_intro.py tracking_visualization.mp4 --csv smoothed_predictions.csv --resize 1280 720
        ``` 
 5. Video Transition:
    - Produce highlights with transitions:
