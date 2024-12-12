@@ -106,7 +106,7 @@ Ensure video and data files are located in the data/ folder.
 ---
 
 ## File Structure:
-```
+
 Video Highlight Reel Generating:
 
 data: Contains raw data and videos
@@ -156,7 +156,6 @@ iii) Video with transitions
 Project dependencies:
  requirements.txt  
 
-```
 ---
 
 ## Model Processing Details
@@ -192,8 +191,8 @@ Model Overview:
    - Distance Travelled: The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
    - Angle Change: The angle change feature measures the change in direction between consecutive points. It can help analyze motion dynamics, such as:Identifying turns or changes in trajectory, understanding directional patterns in movement, detecting anomalies or irregularities in motion paths.
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
-        <img src="results/Distance_Traveled.png" alt="Distance Travelled" width="700" height="300"/>
-        <img src="/results/Angle_Change_Visualization.png" alt="Angle Change" width="620" height="460"/>
+        <img src="results/Distance_Traveled.png" alt="Distance Travelled" width="640" height="460"/>
+        <img src="/results/Angle_Change_Visualization.png" alt="Angle Change" width="640" height="460"/>
      </div>
      
 2. **Model Performance**:
