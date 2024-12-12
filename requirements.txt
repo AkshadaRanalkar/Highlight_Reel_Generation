@@ -1,0 +1,9 @@
+The following requirements must be fulfilled before executing te codes:
+opencv-python==4.10.0.84
+pandas==2.2.3
+scikit-learn==1.5.2
+matplotlib==3.9.2
+numpy==1.24.3
+tqdm==4.67.0
+seaborn==0.13.2
+scipy==1.13.1
