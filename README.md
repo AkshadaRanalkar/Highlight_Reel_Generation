@@ -1,9 +1,7 @@
 
 # Highlight Reel Video 
 
-## Hello!!
-Welcome to the Highlight Reel Video Project.
-This Project is about creating an highlight reel that will be a short but an informative video of the larger video that includes all the important moments fromthe main video with preprocessing and feature engineering. It utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
+## Hello!! Welcome to the Highlight Reel Video Project. This Project is about creating an highlight reel that will be a short but an informative video of the larger video that includes all the important moments fromthe main video with preprocessing and feature engineering. It utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
 
 
 This is the Link to the video. Click to watch the Highlight Reel of the Volleyball match 
