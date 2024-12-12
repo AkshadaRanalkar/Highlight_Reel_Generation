@@ -132,7 +132,7 @@ Ensure video and data files are located in the data/ folder.
 - **Apply smoothing techniques to reduce noise in predictions:**
   ```bash
        python video_processing/filter_predictions.py
-       ``` 
+   ``` 
 4. Highlight Generation:
    - **Once the model is trained, run the opencv_intro script to create the highlights from a video:**
         ```bash
