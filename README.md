@@ -1,27 +1,22 @@
 
 # Highlight Reel Video 
 
-Hello!!
+## Hello!!
 Welcome to the Highlight Reel Video Project.
 This Project is about creating an highlight reel that will be a short but an informative video of the larger video that includes all the important moments fromthe main video with preprocessing and feature engineering. It utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
----
 
-##This is the Link to the video. Click to watch the Highlight Reel of the Volleyball match [![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
+
+This is the Link to the video. Click to watch the Highlight Reel of the Volleyball match 
+##  [![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
 
 ---
 
 ## Requirements are as follows:
 Before running the project, ensure that you have the following dependencies installed:
-Python 3.7+
-opencv-python
-numpy
-pandas
-scikit-learn
-matplotlib
-scipy
+Python 3.7+ , opencv-python, numpy, pandas, scikit-learn, matplotlib, scipy
 
 
-The project is divided into several stages:
+## The project is divided into several stages:
 
 1. **Data Analysis and Feature Engineering:** Perform data cleaning and derive additional features using scripts like data_analysis.py.
 Animate ball trajectories using animation.py.
