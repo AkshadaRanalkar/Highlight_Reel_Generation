@@ -13,6 +13,7 @@ This is the Link to the video. Click to watch the Highlight Reel of the Volleyba
 Before running the project, ensure that you have the following dependencies installed:
 Python 3.7+ , opencv-python, numpy, pandas, scikit-learn, matplotlib, scipy
 
+---
 
 ## The project is divided into several stages:
 
@@ -23,9 +24,6 @@ Visualize model predictions with visualize_target.py.
 3. **Prediction Smoothing:** Smooth raw predictions using techniques like moving averages, Gaussian filters, and expansion (handled in filter_predictions.py).
 4. **Highlight Generation:** Generate highlights from smoothed predictions, with seamless transitions applied to key events (video_transition.py).
 5. **Final Output and Evaluation:** Save results and visualize comparisons between raw, smoothed predictions, and ground truth data.
-
----
-
 
 - *Feature-Rich Analysis:* Extract meaningful features such as distance travelled, angle change.
 - *Advanced Smoothing:* Techniques like median, Gaussian, and moving average filters ensure stable event detection.
@@ -145,8 +143,6 @@ Ensure video and data files are located in the data/ folder.
      ```bash
       python video_processing/video_prediction.py
      ``` 
-
-
 ---
 
 ## Model Processing Details
@@ -159,14 +155,10 @@ Model Overview:
 2. **Feature Engineering:** 
    - Features such as distance travelled, angle change has been incorporated
 
----
-
 ## Smoothing
 
 - **Techniques:** Applies advanced techniques such as Median filtering, Gaussian smoothing, and moving average to stabilize predictions.
 - **Implementation:** Configured through filter_predictions.py using the PredictionProcessor class, which applies the best-suited smoothing techniques.
-
----
 
 ## Transitions
 
