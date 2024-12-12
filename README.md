@@ -128,8 +128,8 @@ Ensure video and data files are located in the data/ folder.
     ```bash
     python model_training/visualize_target.py
     ``` 
-3. Smooth Predictions:
-   -**Apply smoothing techniques to reduce noise in predictions:**
+3. Smooth Predictions
+- **Apply smoothing techniques to reduce noise in predictions:**
        ```bash
        python video_processing/filter_predictions.py
        ``` 
