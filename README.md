@@ -130,7 +130,7 @@ Ensure video and data files are located in the data/ folder.
     ``` 
 3. Smooth Predictions
 - **Apply smoothing techniques to reduce noise in predictions:**
-       ```bash
+  ```bash
        python video_processing/filter_predictions.py
        ``` 
 4. Highlight Generation:
