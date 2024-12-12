@@ -1,20 +1,16 @@
 
 # Highlight Reel Video 
 
+Hello!!
+Welcome to the Highlight Reel Video Project.
+This Project is about creating an highlight reel that will be a short but an informative video of the larger video that includes all the important moments fromthe main video with preprocessing and feature engineering. It utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
 ---
 
-## Video Link:
-
-Experience volleyball match highlights featuring advanced prediction smoothing, transitions, and insightful visualizations:  
-[![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
+##This is the Link to the video. Click to watch the Highlight Reel of the Volleyball match [![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/YOlFYVxnS3Q?si=r3UQ4Zk4bFgEERsU)
 
 ---
 
-## An Overview of the project:
-The **An Video Highlight Reel Generating System**  utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. 
-This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
-
-## Requirements:
+## Requirements are as follows:
 Before running the project, ensure that you have the following dependencies installed:
 Python 3.7+
 opencv-python
@@ -24,7 +20,7 @@ scikit-learn
 matplotlib
 scipy
 
-## Project Workflow
+
 The project is divided into several stages:
 
 1. **Data Analysis and Feature Engineering:** Perform data cleaning and derive additional features using scripts like data_analysis.py.
@@ -37,11 +33,11 @@ Visualize model predictions with visualize_target.py.
 
 ---
 
-## Features
-- **Feature-Rich Analysis:** Extract meaningful features such as ball position, trajectory, and interaction with boundaries.
-- **Advanced Smoothing:**: Techniques like median, Gaussian, and moving average filters ensure stable event detection.
-- **Highlight Transitions:** High-quality transitions, including fade, slide, and dissolve effects, for professional output.
-- **Customizable Parameters:** User-configurable settings for model tuning, smoothing window size, and transition effects.
+
+- *Feature-Rich Analysis:* Extract meaningful features such as distance travelled, angle change.
+- *Advanced Smoothing:* Techniques like median, Gaussian, and moving average filters ensure stable event detection.
+- *Highlight Transitions:* High-quality transitions, including fade, slide, and dissolve effects, for professional output.
+- *Customizable Parameters:* User-configurable settings for model tuning, smoothing window size, and transition effects.
 
 ---
 
