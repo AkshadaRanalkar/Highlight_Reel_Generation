@@ -134,32 +134,32 @@ Before running the project, ensure that you have the following dependencies inst
 
 ```
 Video Highlight Reel Generating System/
-│
-├── data/                         # Contains raw data and videos
-│   ├── video.mp4                 # Input video file
-│   ├── provided_data.csv         # Raw trajectory data
-│   └── target.csv                # Classification target data
-│
-├── scripts/                      # Python scripts for different stages
-│   ├── data_preprocessing/       # Data collection and preprocessing
-│   │   ├── data_analysis.py   # Initial data cleaning and visualization
-│   │   └── animation.py          # Visualize custom features with ball tracking
-│   │
-│   ├── model_training/           # Model selection and training
-│   │   ├── Time_Classification1.py    # Train XGboost classifier
-│   │   └── visualize_target.py     # Visualize model predictions on video
-│   │
-│   ├── video_processing/         # Video smoothing and transitions
-│   │   ├── filter_predictions.py  # Apply advanced filtering techniques
-│   │   ├── opencv_intro.py        # Highlight generation with OpenCV
-│   │   └── video_transition.py    # Apply transitions between video segments
-│
-├── results/                      # Output files
-│   ├── smoothed_predictions.csv  # Smoothed model predictions
-│   ├── output_video.mp4            # Video without transitions
-│   └── highlight_reel_transitions.mp4        # Video with transitions
-│
-└── requirements.txt              # Project dependencies
+
+-> data/                         # Contains raw data and videos
+  ── video.mp4                 # Input video file
+  ── provided_data.csv         # Raw trajectory data
+  ── target.csv                # Classification target data
+
+-> scripts/                      # Python scripts for different stages
+   ---> data_preprocessing/       # Data collection and preprocessing
+        ── data_analysis.py   # Initial data cleaning and visualization
+        ── animation.py          # Visualize custom features with ball tracking
+
+   ---> model_training/           # Model selection and training
+        ── Time_Classification1.py    # Train XGboost classifier
+        ── visualize_target.py     # Visualize model predictions on video
+   
+   ---> video_processing/         # Video smoothing and transitions
+        ── filter_predictions.py  # Apply advanced filtering techniques
+        ── opencv_intro.py        # Highlight generation with OpenCV
+        ── video_transition.py    # Apply transitions between video segments
+
+-> results/                      # Output files
+   ── smoothed_predictions.csv  # Smoothed model predictions
+   ── output_video.mp4            # Video without transitions
+   ── highlight_reel_transitions.mp4        # Video with transitions
+
+-> requirements.txt              # Project dependencies
 
 ```
 ---
