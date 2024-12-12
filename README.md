@@ -202,6 +202,5 @@ Model Overview:
    - Fade: Gradual blending of two frames to create a smooth effect.
    - Slide: Left-to-right or right-to-left frame transitions for a dynamic effect.
    - Dissolve: Pixel-level blending based on randomized masking to create a seamless transition.
-   - [Watch the Full Video Highlight on YouTube](https://youtu.be/YOlFYVxnS3Q?si=IVNFbEKPjGHvNNZs)
 
 ---
