@@ -184,7 +184,6 @@ Transitions
 
 --> **Prediction Smoothing:**
    - The system generates smoothed predictions by comparing raw predictions with the ground truth targets. The results are visualized.
-     
     <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
         <img src="results/predictions_comparison.png" alt="Comparison of Raw and smooth Prediction" width="700" height="300"/>
     </div>
