@@ -152,12 +152,12 @@ Model Overview:
 2. **Feature Engineering:** 
    - Features such as distance travelled, angle change has been incorporated
 
-## Smoothing
+Smoothing
 
 - **Techniques:** Applies advanced techniques such as Median filtering, Gaussian smoothing, and moving average to stabilize predictions.
 - **Implementation:** Configured through filter_predictions.py using the PredictionProcessor class, which applies the best-suited smoothing techniques.
 
-## Transitions
+Transitions
 
 - **Effect Types:** Includes effects like fade, slide, and dissolve to create visually appealing transitions between key moments.
 - **Implementation:** Handled in video_transition.py using OpenCV's advanced blending techniques.
