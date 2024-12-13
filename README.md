@@ -3,7 +3,6 @@
 
 ### Hello!! Welcome to the Highlight Reel Video Project. This Project is about creating an highlight reel that will be a short but an informative video of the larger video that includes all the important moments fromthe main video with preprocessing and feature engineering. It utilizes a combination of trajectory analysis, machine learning classification, and video processing to generate engaging highlights from match footage. This system streamlines the workflow for analysts, coaches, and content creators by automating event detection and video production.
 
-
 This is the Link to the video. Click to watch the Highlight Reel of the Volleyball match 
 ##  [![Watch Highlights on YouTube](https://img.shields.io/badge/YouTube-Watch%20Now-red?logo=youtube)](https://youtu.be/yPt7YxjFrj4)
 
@@ -17,10 +16,8 @@ Python 3.7+ , opencv-python, numpy, pandas, scikit-learn, matplotlib, scipy
 
 ## The project is divided into several stages:
 
-1. **Data Analysis and Feature Engineering:** Perform data cleaning and derive additional features using scripts like data_analysis.py.
-Animate ball trajectories using animation.py.
-2. **Model Training and Prediction:** Train a classification model using Time_Classification1.py.
-Visualize model predictions with visualize_target.py.
+1. **Data Analysis and Feature Engineering:** Perform data cleaning and derive additional features using scripts like data_analysis.py. Animate ball trajectories using animation.py.
+2. **Model Training and Prediction:** Train a classification model using Time_Classification1.py. Visualize model predictions with visualize_target.py.
 3. **Prediction Smoothing:** Smooth raw predictions using techniques like moving averages, Gaussian filters, and expansion (handled in filter_predictions.py).
 4. **Highlight Generation:** Generate highlights from smoothed predictions, with seamless transitions applied to key events (video_transition.py).
 5. **Final Output and Evaluation:** Save results and visualize comparisons between raw, smoothed predictions, and ground truth data.
