@@ -145,11 +145,10 @@ Ensure video and data files are located in the data/ folder.
 ## Model Processing Details
 
 Model Overview:
-
-1. **Classifier:** 
+--> **Classifier:** 
    - XGBoost (eXtreme Gradient Boosting). Multiple models have been run and the accuracy has been compared to get the best model.
      
-2. **Feature Engineering:** 
+--> **Feature Engineering:** 
    - Features such as distance travelled, angle change has been incorporated
 
 Smoothing
@@ -167,7 +166,7 @@ Transitions
 
 ## Results
 
-1. **Feature**:
+--> **Feature**:
    - Distance Travelled: Tells how much distance the ball hav covered with respect to time.
    - Angle Change: The angle change feature measures the change in direction between consecutive points. It can help analyze motion dynamics, such as:Identifying turns or changes in trajectory, understanding directional patterns in movement, detecting anomalies or irregularities in motion paths.
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
@@ -175,7 +174,7 @@ Transitions
         <img src="/results/Angle_Change_Visualization.png" alt="Angle Change" width="640" height="460"/>
      </div>
      
-2. **Model Performance**:
+--> **Model Performance**:
    - The XGboost classifier was trained and validated with various feature sets, yielding impressive classification accuracy. Hyperparameter optimization improved the **weighted F1 score**, making the model more reliable for detecting key events in the game. below is the result from the classification report
 
      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
@@ -183,17 +182,17 @@ Transitions
         <img src="results/Parameter_Search_Heatmap.png" alt="F1 Score HeatMap" width="620" height="460"/>
      </div>
 
-3. **Prediction Smoothing:**
+--> **Prediction Smoothing:**
    - The system generates smoothed predictions by comparing raw predictions with the ground truth targets. The results are visualized.
      
     <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px; margin-bottom: 20px">
         <img src="results/predictions_comparison.png" alt="Comparison of Raw and smooth Prediction" width="700" height="300"/>
     </div>
    
-4. **Highlight Video:**
+--> **Highlight Video:**
    - Highlights with smooth transitions are saved. Transition effects like fade, slide, and dissolve enhance the presentation quality of the video.
 
-5. **Video Transition Details**
+--> **Video Transition Details**
    - The video transitions were visually appealing, adding a professional touch to the highlight reel.
    - Transitions: Transitions between highlights are generated using OpenCV.
    - Fade: Gradual blending of two frames to create a smooth effect.
